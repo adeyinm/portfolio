@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+    background: #fff;
+    color: #333;
+}
+
+p {
+    margin: 10px 0;
+}
+
+h2,
+h3,
+h4 {
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 70px;
+    background-color: #333;
+    opacity: 0.8;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li a {
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+
+.navbar .logo h1 {
+    color: #fff;
+    font-weight: 300;
+}
+
+.nav ul li a:hover {
+    border-bottom: 2px solid #28a745;
+}
+
+.hero {
+    background: url(../images/home/showcase.jpg) no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+    width: 100%;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    background: rgb(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.hero * {
+    z-index: 10;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;    
+    padding: 0 20px;
+}
+
+.content h1 {
+    font-size: 55px;
+    font-weight: 300;
+}
+
+.content img {
+    width: 100%;
+}
+
+.content p {
+    margin: 20px 0 30px;
+    max-width: 600px;
+}
+
+.content a:hover {
+    opacity: 0.9;
+}
+
+.we-do {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.we-do .icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    padding: 30px 10px;
+}
+
+.we-do .icons i {
+    background-color: #28a745;
+    color: #fff;
+    margin: 20px 0;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.we-do .icons h2 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.we-do .icons p {
+    padding: 0 30px;
+}
+
+.cases {
+    display: flex;
+    flex-direction: column;
+}
+
+.case-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.case-content h3 {
+    font-weight: bold;
+}
+
+.case-content h1 {
+    font-weight: 300;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.case-content p {
+    max-width: 600px;
+}
+.case-row {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    height: 100%;
+}
+.case-row > img {
+    padding: 4px 4px;
+}
+
+.case-row > img:hover{
+    opacity: 0.7;
+}
+
+.bg-tertiary {
+    background-color: #f4f4f4;
+}
+
+.blog .column .column-2 a.btn {
+    background: #0284d0;
+}
+.blog .rows {
+    flex-direction: row-reverse;
+}
+
+.blog {
+    margin-top: 30px;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: none;
+}
+
+.contact-content a {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.input:focus {
+    outline-color: #28a745;
+    border-radius: 5px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.social {
+    margin: 10px 0;
+}
+.social a{
+    padding: 0 20px;
+}
+
+.social a:hover{
+    color: #28a745;
+}
+
+/* Mobile media query */
+
+@media(max-width:768px) {
+    .navbar {
+        flex-direction: column;
+        height: 120px;
+        padding: 20px;
+    }
+
+
+    .nav ul li a {
+        padding: 10px 10px;
+        margin: 0 3px;
+    }
+
+    .we-do {
+        flex-direction: column;
+    }
+
+    .rows{
+        flex-direction: column;
+        
+    }
+    img{
+        display: block;
+    }
+
+    .case-content p{
+        padding: 0 10px;
+    }
+
+    .case-row {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .team-profile-row {
+        flex-direction: column;
+    }
+
+    .blog .rows{
+        flex-direction: column;
+        
+    }
+    img{
+        display: block;
+    }
+  
+}
