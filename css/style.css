@@ -36,8 +36,12 @@ a {
     color: #fff;
     text-decoration: none;
 }
-
+.hero * {
+    z-index: 10;
+     
+}
 .navbar {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,19 +49,26 @@ a {
     height: 70px;
     background-color: #333;
     opacity: 0.8;
-    position: fixed;
-    top: 0px;
+    top: 0;
     width: 100vw;
+    z-index: 1000; /* Ensure it is above other content */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
 }
 
 .nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
+    justify-content: flex-end;
 }
 
 .nav ul li a {
     color: #fff;
     padding: 10px 20px;
     margin: 0 5px;
+    display: block;
+    text-decoration: none;
 }
 
 .navbar .logo h1 {
@@ -87,8 +98,28 @@ a {
     width: 100%;
 }
 
-.hero * {
-    z-index: 10;
+
+/* .card {
+    size: ;
+} */
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+} */
+.card-body .btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+    transition: background-color 0.3s, border-color 0.3s;
+    height: 100%;
+}
+
+.card-body .btn-primary:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+.card-text {
+    text-align: justify;
 }
 
 .content {
@@ -227,12 +258,60 @@ a {
     border-radius: 5px;
 }
 
+
+/* Footer */
 .footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 30px 0;
+    justify-content: center;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #28a745;
+}
+
+.footer .social {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.footer .social a {
+    margin: 0 15px;
+    font-size: 24px;
+}
+
+.footer .social a:hover {
+    color: #28a745;
+}
+
+.footer p {
+    margin: 10px 0 0;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    color: #28a745;
+}
+
+.footer .social > * {
+    margin-right: 30px;
 }
 
 .social {
@@ -244,7 +323,7 @@ a {
 
 .social a:hover{
     color: #28a745;
-}
+} 
 
 /* Mobile media query */
 

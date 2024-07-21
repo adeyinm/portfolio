@@ -15,6 +15,7 @@
 }
 .text-primary {
     color: #28a745;
+    
 }
 
 .text-secondary {
@@ -29,6 +30,7 @@
     background: #28a745;
     color: #fff;
 }
+
 
 .rows {
     display: flex;
